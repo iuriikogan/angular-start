@@ -36,7 +36,7 @@ export class ToDoComponent implements OnInit {
       this.toDoService.removeTitle($key);
   }
 
-//   alterCheck($key: string, isChecked) {
-//     this.toDoService.checkOrUnCheckTitle($key, !isChecked);
-//   }
+  alterCheck($key: string, isChecked) {
+    this.toDoService.checkOrUnCheckTitle($key, !isChecked);
+  }
 }
