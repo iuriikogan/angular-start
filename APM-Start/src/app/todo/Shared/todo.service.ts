@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AngularFireDatabase, AngularFireList } from '/angularfire2/database';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
 
 @Injectable()
 export class ToDoService {
@@ -20,7 +20,7 @@ addTitle(title: string) {
 }
 
 checkOrUnCheckTitle($key: string, flag: boolean) {
-  this.toDoList.update($key, { isChecked:flag });
+  this.toDoList.update($key, { isChecked: flag });
 }
 
 removeTitle($key: string) {
