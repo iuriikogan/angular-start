@@ -6,5 +6,5 @@ import {Component} from '@angular/core';
 })
 
 export class AppComponent {
-  pageTitle: string = 'Acme Product Management';
+  pageTitle: string = 'Iurii Tasks Angular 6/TS/node';
 }
