@@ -10,12 +10,12 @@
 </div>
 <div style="margin: 5px 0px;">
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let for item of toDoListArray">
-    <span class="hover-cursor" [ngClass]="item.isChecked?'fa fa-check-circle-o':'fa fa-circle-thin'"></span>
-    {{itemTitle}}
+    <li class="list-group-item" *ngFor="let item of toDoListArray">
+    <span class="hover-cursor" [ngClass]="item.isChecked? 'fa fa-check-circle-o':'fa fa-circle-thin'"></span>
+    {{item.title}}
     <span class="hover-cursor text-danger pull-right">
       <i class="fa fa-trash-o fa-lg"></i>
     </span>
-  </li>
+    </li>
   </ul>
 </div>
