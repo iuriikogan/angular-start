@@ -8,3 +8,14 @@
     <i class="fa fa-plus-circle fa-2x"></i>
   </div>
 </div>
+<div style="margin: 5px 0px;">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let for item of toDoListArray">
+    <span class="hover-cursor" [ngClass]="item.isChecked?'fa fa-check-circle-o':'fa fa-circle-thin'"></span>
+    {{itemTitle}}
+    <span class="hover-cursor text-danger pull-right">
+      <i class="fa fa-trash-o fa-lg"></i>
+    </span>
+  </li>
+  </ul>
+</div>
