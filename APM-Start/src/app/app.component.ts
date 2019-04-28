@@ -5,6 +5,4 @@ import {Component} from '@angular/core';
   templateUrl: 'app.component.html'
 })
 
-export class AppComponent {
-  pageTitle: string = 'Iurii Tasks Angular 6/TS/node';
-}
+export class AppComponent {}
