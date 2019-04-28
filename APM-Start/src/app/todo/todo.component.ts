@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ToDoService } from './Shared/todo.service';
+import { ToDoService } from './shared/todo.service';
 @Component({
   selector: 'pm-todo',
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css'],
   providers : [ToDoService]
 })
-export class TodoComponent implements OnInit {
+export class ToDoComponent implements OnInit {
   toDoListArray: any[];
   constructor(private toDoService: ToDoService) { }
 
@@ -32,7 +32,11 @@ export class TodoComponent implements OnInit {
     itemTitle.value = null;
   }
 
-  alterCheck($key: string, isChecked) {
-    this.toDoService.checkOrUncheckTitle($key, !isChecked);
+  onDelete($key: string) {
+      this.toDoService.removeTitle($key);
   }
+
+//   alterCheck($key: string, isChecked) {
+//     this.toDoService.checkOrUnCheckTitle($key, !isChecked);
+//   }
 }
