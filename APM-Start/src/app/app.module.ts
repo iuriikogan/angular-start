@@ -7,6 +7,8 @@ import { ToDoComponent } from './todo/todo.component';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+// Simport components/environment/db into app module
+
 @NgModule({
   declarations: [
     AppComponent,
